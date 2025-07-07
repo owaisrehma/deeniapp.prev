@@ -1,0 +1,405 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", Arial, sans-serif;
+    overflow-x: hidden;
+    /* Prevent horizontal scroll bar */
+}
+
+.container {
+    background-color: white;
+    border: 1px solid rgb(183, 183, 183);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 225px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 600;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #00000099;
+}
+
+/* color: #003300; */
+
+nav ul li a.active {
+    color: #003300;
+}
+
+.navbar ul li:last-child a {
+    color: #00000099;
+}
+
+.navbar ul button {
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 25px;
+    border: 3px solid gray;
+    font-weight: 600;
+    color: gray;
+    background-color: white;
+}
+
+.download-btn:hover {
+    background-color: #003300;
+    color: white;
+    border: 3px solid #003300;
+
+}
+
+
+
+.navbar ul li:not(:last-child) {
+    border-bottom: none !important;
+    border-right: none !important;
+}
+
+
+
+.navbar .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 20px !important;
+}
+
+.logo img {
+    display: block;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/*----------------Header-----------*/
+
+
+.Header-section {
+    width: 100vw;
+    /* height: 75vh; */
+    /* background-color: red; */
+    /* background-color: red; */
+    position: relative;
+    overflow: hidden;
+    margin-top: 100px
+}
+
+.overlay2 {
+    /* background: rgba(0, 0, 0, 0.6); optional overlay */
+    max-width: 1200px;
+    margin: auto;
+    /* background-color: rgb(54, 54, 54); */
+    /* margin-top: 80px; */
+    display: flex;
+    /* gap: 50px */
+}
+
+.Header-content {
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: violet; */
+    gap: 30px
+}
+
+.Header-content h1 {
+    font-size: 22px;
+    margin: 0;
+    color: #003300;
+    margin-bottom: 5px
+}
+
+.Header-content p {
+    margin: 0;
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    justify-content: center
+}
+
+.buttons img {
+    height: 80px;
+    transition: transform 0.3s ease;
+}
+
+.buttons img:hover {
+    transform: scale(1.05);
+}
+
+.Header-image {
+    width: 1100px;
+    /* background-color: gray; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.Header-image img {
+    width: 400px
+}
+
+/*-------------Responsive Design-----------*/
+
+@media(max-width: 1135px) {
+    .overlay2 {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .Header-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Header-image img {
+        width: 250px;
+        margin-top: -50px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 30px;
+    }
+
+    .Header-content {
+        text-align: start;
+        padding: 40px
+    }
+
+    .Header-image img {
+    /* margin-top: 30px */
+    width: 90%;
+}
+    .buttons img {
+    height: 60px;
+    
+}
+}
+
+@media (max-width: 480px) {
+    .buttons {
+        display: flex;
+        justify-content: start
+    }
+    .buttons img {
+    height: 45px;
+    
+}
+}
+
+/*--------Footer Section---*/
+
+.footer-section {
+    width: 100%;
+    margin-top: 50px
+}
+
+.overlay5 {
+    padding: 40px 20px;
+    background-color: #242424;
+
+}
+
+.footer-content {
+    max-width: 1200px;
+    /* background-color: darkgray; */
+    justify-content: center;
+    margin: auto
+}
+
+.upper-footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px
+}
+
+.logowithtext {
+    max-width: 200px;
+    /* background-color: lightgray; */
+    /* padding: 20px; */
+    border-radius: 1px solid black
+}
+
+.logo-name {
+    display: flex;
+    gap: 10px
+}
+
+.logo-name h2 {
+    margin: 0;
+    color: #999999
+}
+
+.logo-name img {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px
+}
+
+.logo-text p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666666
+}
+
+.footer-btn {
+    max-width: 200px;
+    /* background-color: lightgray; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-btn a img {
+    width: 140px;
+    margin: auto;
+}
+
+
+.Tags {
+    max-width: 200px;
+    /* background-color: lightgray; */
+}
+
+.Tags ul {
+    padding: 0;
+    margin: 0;
+    line-height: 2.5;
+    font-weight: bold
+}
+
+.Tags ul li {
+    list-style: none;
+    margin: 20;
+    color: #666666
+}
+
+.Links-mail {
+    max-width: 200px;
+    /* background-color: lightgray */
+}
+
+.feature {
+    margin-bottom: 70px
+}
+
+.Links-mail ul {
+    padding: 0;
+    margin: 0;
+    font-weight: bold
+}
+
+.Links-mail ul li {
+    list-style: none;
+    margin: 20;
+    color: #666666
+}
+
+.support-mail {
+    font-weight: 400
+}
+
+.icons {
+    max-width: 1200px;
+    width: 100%;
+    /* background-color: darkgray; */
+    justify-content: center;
+    margin: auto;
+    
+    
+}
+
+.icon {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 30px;
+    flex-wrap: wrap
+
+}
+
+.fa-brands {
+    font-size: 25px;
+    background-color: none;
+    padding: 10px;
+    border-radius: 50px;
+    color: white;
+    border: 2px solid white
+}
+
+/*-------Responsive Design--------------------*/
+
+@media (max-width: 750px) {
+    .upper-footer {
+        justify-content: start
+    }
+
+    .logowithtext {
+        max-width: 100%
+    }
+
+    .footer-btn {
+        max-width: 100%
+    }
+
+    .Tags {
+        max-width: 100%
+    }
+
+    .Links-mail {
+        max-width: 100%
+    }
+}
+
+
+@media (max-width: 470px) {
+    .logowithtext {
+        padding: 0
+    }
+    .upper-footer {
+        flex-direction: column
+    }
+    .icon {
+        flex-direction: column;
+    }
+
+    .fa-brands {
+        text-align: center;
+        border: none;
+        border: 2px solid white;
+        margin: auto
+    }
+    
+    
+}
+
